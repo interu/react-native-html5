@@ -102,6 +102,9 @@ const defaultStyle = {
     paddingVertical: 5,
     paddingHorizontal: 10,
   },
+  p: {
+    marginVertical: 5,
+  },
 };
 
 const defaultExternalStyle = {
