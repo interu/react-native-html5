@@ -147,8 +147,8 @@ export default class Html5 extends Component {
   }
 
   compile(doms) {
-    var styleSheet = this.props.styleSheet;
-    var externalStyleSheet = this.props.externalStyleSheet;
+    var styleSheet = this.props.styleSheet || {};
+    var externalStyleSheet = this.props.externalStyleSheet || {};
     return doms.map((dom, index) => {
       if(dom.type === 'tag') {
         let style = Object.assign({}, defaultStyle[dom.name], styleSheet[dom.name]);
