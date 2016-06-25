@@ -1,7 +1,7 @@
 # react-native-html5
 html, html5 parser for react-native
 
-![Mou icon](https://pillys.github.io/react-native-html5/images/0.png)![Mou icon](https://pillys.github.io/react-native-html5/images/1.png)
+![Mou icon](https://pillys.github.io/react-native-html5/images/0.png) ![Mou icon](https://pillys.github.io/react-native-html5/images/1.png)
 
 ## Install
 ```
@@ -10,6 +10,10 @@ npm install react-native-html5
 
 ## Usage
 ```
+import Html5 from 'react-native-html5';
+
+...
+
 <Html5
   rawHtml={rawHtml}
   styleSheet={styleSheet}
