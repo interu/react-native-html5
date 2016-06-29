@@ -109,7 +109,7 @@ const defaultStyle = {
 
 const defaultExternalStyle = {
   p: {
-    textIndent: 0,
+    lineHeight: 20,
   }
 };
 
@@ -234,8 +234,7 @@ export default class Html5 extends Component {
                     key={index}
                     style={style}
                   >
-                    <Text>
-                      <Text>{' '.repeat(externalStyle.textIndent)}</Text>
+                    <Text style={externalStyle}>
                       {this.compile(dom.children)}
                     </Text>
                   </View>
