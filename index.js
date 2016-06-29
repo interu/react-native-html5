@@ -228,29 +228,16 @@ export default class Html5 extends Component {
                 >{this.compile(dom.children)}</View>
               );
             } else {
-              if(dom.name === 'p') {
-                return (
-                  <View
-                    key={index}
-                    style={style}
-                  >
-                    <Text style={externalStyle}>
-                      {this.compile(dom.children)}
-                    </Text>
-                  </View>
-                );
-              } else {
-                return (
-                  <View
-                    key={index}
-                    style={style}
-                  >
-                    <Text>
-                      {this.compile(dom.children)}
-                    </Text>
-                  </View>
-                );
-              }
+              return (
+                <View
+                  key={index}
+                  style={style}
+                >
+                  <Text style={externalStyle}>
+                    {this.compile(dom.children)}
+                  </Text>
+                </View>
+              );
             }
         }
       } else if(dom.type === 'text') {
